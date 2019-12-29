@@ -19,12 +19,12 @@ var rokSelect = document.getElementById("volbaroku");
 rok = rokSelect.options[rokSelect.selectedIndex].value;
 
 if (rok == 'rok2019') {
-	var redakce = 'media2019.json'
+	var redakce = './media2019.json'
 } else {
-	var redakce = 'media2009.json'
+	var redakce = './media2009.json'
 }
 
-fetch('orp.json')
+fetch('./orp.json')
 .then(response => response.json())
 .then(data1 => {
 
